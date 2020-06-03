@@ -1,3 +1,7 @@
+library(dslabs)
+data(heights)
+my_data = heights$height
+
 a <- seq(min(my_data), max(my_data), length = 100)    # define range of values spanning the dataset
 cdf_function <- function(x) {    # computes prob. for a single value
     mean(my_data <= x)
